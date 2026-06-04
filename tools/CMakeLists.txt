@@ -278,6 +278,9 @@ if(TARGET pcl_surface)
 
     PCL_ADD_EXECUTABLE(pcl_compute_hull COMPONENT ${SUBSYS_NAME} SOURCES compute_hull.cpp)
     target_link_libraries(pcl_compute_hull pcl_common pcl_io pcl_surface)
+
+    PCL_ADD_EXECUTABLE(pcl_calc_2d_concave_hull COMPONENT ${SUBSYS_NAME} SOURCES calc_2d_concave_hull.cpp)
+    target_link_libraries(pcl_calc_2d_concave_hull pcl_common pcl_io pcl_surface)
   endif()
 endif()
 
